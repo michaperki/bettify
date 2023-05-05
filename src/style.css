@@ -193,10 +193,8 @@ ul {
 }
 
 /*
-how do I transition the display property?
 
-.header__nav-list {
-    display: none;
-    transition: var(--main-transition);
-}
+how can I add a transition so the nav menu slides down?
+// 
+
 */
