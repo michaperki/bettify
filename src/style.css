@@ -1,25 +1,202 @@
+/* styling for a mobile responsive application */
+
+:root {
+    --main-color: #2a9d8f;
+    --main-color-light: #e9c46a;
+    --main-color-dark: #264653;
+    --main-color-darker: #1d3557;
+    --main-color-darkest: #0f2f49;
+    --main-color-lighter: #f4a261;
+    --main-color-lightest: #e76f51;
+    --main-color-lightest-2: #f4a261;
+    --main-color-lightest-3: #e9c46a;
+    --main-color-lightest-4: #e9c46a;
+    --main-color-lightest-5: #e9c46a;
+    --main-color-lightest-6: #e9c46a;
+    --main-color-lightest-7: #e9c46a;
+    --main-color-lightest-8: #e9c46a;
+    --main-color-lightest-9: #e9c46a;
+
+
+    --main-font: 'Roboto', sans-serif;
+    --main-font-color: #fff;
+    --main-font-color-light: #fff;
+    --main-font-color-dark: #000;
+    --main-font-color-darker: #000;
+
+
+
+    --main-font-size: 1rem;
+    --main-font-size-large: 1.5rem;
+    --main-font-size-small: 0.8rem;
+    --main-font-size-x-small: 0.5rem;
+    --main-font-size-xx-small: 0.3rem;
+
+    --main-font-weight: 400;
+    --main-font-weight-bold: 700;
+    --main-font-weight-bolder: 900;
+
+    --main-border-radius: 0.5rem;
+    --main-border-radius-large: 1rem;
+    --main-border-radius-small: 0.2rem;
+    --main-border-radius-x-small: 0.1rem;
+    --main-border-radius-xx-small: 0.05rem;
+
+    --main-border-width: 0.1rem;
+    --main-border-width-large: 0.2rem;
+    --main-border-width-small: 0.05rem;
+    --main-border-width-x-small: 0.01rem;
+    --main-border-width-xx-small: 0.005rem;
+
+    --main-border-color: #fff;
+    --main-border-color-light: #fff;
+    --main-border-color-dark: #fff;
+    --main-border-color-darker: #fff;
+
+    --main-padding: 1rem;
+    --main-padding-large: 2rem;
+    --main-padding-small: 0.5rem;
+    --main-padding-x-small: 0.2rem;
+    --main-padding-xx-small: 0.1rem;
+
+    --main-margin: 1rem;
+    --main-margin-large: 2rem;
+    --main-margin-small: 0.5rem;
+    --main-margin-x-small: 0.2rem;
+    --main-margin-xx-small: 0.1rem;
+
+    --main-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+    --main-shadow-large: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+    --main-shadow-small: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.1);
+    --main-shadow-x-small: 0.01rem 0.01rem 0.01rem rgba(0, 0, 0, 0.1);
+    --main-shadow-xx-small: 0.005rem 0.005rem 0.005rem rgba(0, 0, 0, 0.1);
+
+    --main-transition: all 0.2s ease-in-out;
+    --main-transition-large: all 0.5s ease-in-out;
+    --main-transition-small: all 0.1s ease-in-out;
+    --main-transition-x-small: all 0.05s ease-in-out;
+    --main-transition-xx-small: all 0.01s ease-in-out;
+
+    --main-transition-delay: 0.2s;
+    --main-transition-delay-large: 0.5s;
+    --main-transition-delay-small: 0.1s;
+
+    --main-transition-property: all;
+    --main-transition-property-large: all;
+    --main-transition-property-small: all;
+    --main-transition-property-x-small: all;
+    --main-transition-property-xx-small: all;
+
+    --main-transition-timing-function: ease-in-out;
+    --main-transition-timing-function-large: ease-in-out;
+    --main-transition-timing-function-small: ease-in-out;
+
+    --main-transition-duration: 0.2s;
+    --main-transition-duration-large: 0.5s;
+    --main-transition-duration-small: 0.1s;
+
+    --main-transition-timing-function: ease-in-out;
+    --main-transition-timing-function-large: ease-in-out;
+    --main-transition-timing-function-small: ease-in-out;
+}
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #f1f1f1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding: 20px;
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    font-weight: var(--main-font-weight);
+    color: var(--main-font-color);
+    background-color: var(--main-color);
+    line-height: 1.5;
 }
 
-/* Center website */
-.main {
-    max-width: 1000px;
-    margin: auto;
+a {
+    text-decoration: none;
+    color: var(--main-font-color);
 }
 
-h1 {
-    font-size: 50px;
-    word-break: break-all;
+ul {
+    list-style: none;
 }
 
-.row {
-    margin: 8px -16px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--main-padding);
+    background-color: var(--main-color-light);
+    color: var(--main-font-color-dark);
+    box-shadow: var(--main-shadow);
 }
+
+.header__logo {
+    font-size: var(--main-font-size-large);
+    font-weight: var(--main-font-weight-bold);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__hamburger {
+    font-size: var(--main-font-size-large);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.header__hamburger--hidden {
+    display: none;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: var(--main-margin);
+    transition: var(--main-transition);
+}
+
+.header__nav-list--active {
+    display: flex;
+    flex-direction: column;    
+}
+
+.header__nav-list--hidden {
+    display: none;
+}
+
+.header__nav-link {
+    font-size: var(--main-font-size-large);
+    font-weight: var(--main-font-weight-bold);
+    margin-left: var(--main-margin);
+}
+
+/* style the close button */
+.header__close {
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: var(--main-font-size-large);
+    font-weight: var(--main-font-weight-bold);
+    margin: var(--main-margin);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+/*
+how do I transition the display property?
+
+.header__nav-list {
+    display: none;
+    transition: var(--main-transition);
+}
+*/
