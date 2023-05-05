@@ -17,6 +17,9 @@ export class BetEventList {
     }
 
     // when a bet event open time plus duration is less than the current time, close the bet
+    // where should this method be called?
+    // answer: this method should be called in the index.js file in the initialPageLoad function
+    // this method should be called after the bet list is populated
     closeExpiredBets() {
         // get the current time
         const currentTime = new Date();
@@ -30,4 +33,3 @@ export class BetEventList {
         });
     }
 }
-
