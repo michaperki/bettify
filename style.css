@@ -174,3 +174,14 @@ i {
     text-align: center;
   }
   
+.add-bet-event-popup.active {
+    display: block;
+  }
+
+.add-bet-event-popup input {
+    margin-bottom: 10px;
+  }
+
+.add-bet-event-popup button {
+    margin-top: 10px;
+  }
