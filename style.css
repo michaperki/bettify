@@ -1,0 +1,176 @@
+:root {
+    --primary-dark: #333;
+    --secondary-dark: #444;
+    --primary-light: #eee;
+    --secondary-light: #ddd;
+  }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+  }
+  
+body {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  /* footer support */
+  margin-bottom: 48px;
+}
+
+button,
+input {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+i {
+  margin-right: 10px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fa-check-double {
+    font-size: 40px;
+  }
+  
+  .page-name {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 40px;
+  }
+  
+  .button-open-nav {
+    display: none;
+    width: 40px;
+    padding: 0;
+    background-color: var(--primary-dark);
+    font-size: 40px;
+  }
+  
+  .button-open-nav i {
+    margin-right: 0;
+  }
+  
+/* Main */
+
+.main {
+    display: flex;
+    /* navbar support */
+    min-height: calc(100vh - 104px - 48px); /*  - header_height - footer_height */
+}
+  
+.nav {
+    width: 300px;
+    min-width: 250px;
+    padding: 20px;
+    background-color: var(--secondary-light);
+  }
+  
+.nav.active {
+    display: block;
+  }
+  
+.button-default-bet-event {
+    background-color: var(--secondary-light);
+    text-align: left;
+  }
+
+.fa-inbox {
+    margin-right: 6px;
+  }
+
+.bet-event-title {
+    padding: 10px; 
+    margin-top: 10px;
+}
+
+.button-bet-event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-light);
+    text-align: left;
+}
+
+.button-add-bet-event {
+    margin-top: 10px;
+    margin-left: 2px;
+    background-color: var(--secondary-light);
+    text-align: left;
+}
+
+.button-add-bet-event.active {
+    display: none;
+  }
+
+.button-bet-event.active,
+.button-default-bet-event.active {
+    display: none;
+  }
+
+.button-bet-event:hover,
+.button-default-bet-event:hover,
+.button-add-bet-event:hover {
+    background-color: #ccc;
+}
+
+.right-project-panel {
+    visibility: hidden;
+}
+
+.button-project:hover .right-project-panel {
+    visibility: visible;
+}
+
+.fa-times {
+    margin-right: 0;
+}
+
+.add-bet-event-popup {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  
